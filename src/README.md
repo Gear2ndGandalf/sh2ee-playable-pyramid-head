@@ -112,18 +112,22 @@ the basic table, so the stock table is never written.
 
 ## Building and testing
 
-    powershell -File build.ps1          # tests, then the .asi and the config tool into the game root
-    powershell -File build.ps1 -Test    # tests only
-    powershell -File build.ps1 -Out X   # the .asi somewhere else (the loaded one is locked while the game runs)
+    powershell -File build.ps1 -SkipHostTest        # logic tests, then the .asi and the config tool into out\ (no game needed)
+    powershell -File build.ps1 -Game "C:\...\SH2"   # both test programs against that folder's sh2pc.exe, then ship into it
+    powershell -File build.ps1 -Game ... -Out X     # ... but ship into folder X (the loaded .asi is locked while the game runs)
+    powershell -File build.ps1 -Game ... -Test      # tests only
 
-Two test programs run before anything ships, neither needing the game:
-`test_logic.exe` checks the decisions (the descriptor substitution, the copy
-of the basic table against the real exe bytes, every weapon slot, the damage
-windows, the run rule, the .ini round trip); `host_test.exe` maps a private
-copy of sh2pc.exe, loads the DLL exactly as the framework does -- `LoadPlugin`
-called at once, before the plugin's own thread can run -- hands it the copy,
-and checks every hook is a jump into the DLL, every table and value is
-written, a value the "game" changes is corrected within 200 ms, and an
-all-off config (and `UnloadPlugin`) puts the code and rdata back byte for byte.
+Two test programs run before anything ships, neither needing the game to be
+running: `test_logic.exe` checks the decisions (the descriptor substitution,
+the copy of the basic table against the real exe bytes, every weapon slot,
+the damage windows, the run rule, the .ini round trip) and needs nothing but
+this source; `host_test.exe` maps a private copy of sh2pc.exe (read only),
+loads the DLL exactly as the framework does -- `LoadPlugin` called at once,
+before the plugin's own thread can run -- hands it the copy, and checks every
+hook is a jump into the DLL, every table and value is written, a value the
+"game" changes is corrected within 200 ms, and an all-off config (and
+`UnloadPlugin`) puts the code and rdata back byte for byte.  Without the
+game, `-SkipHostTest` builds after the logic tests alone.
 
 Needs Visual Studio with the C++ workload (x86 toolset) and a Windows 10 SDK.
+The full walk-through is in the repository's `BUILDING.md`.

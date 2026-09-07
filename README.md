@@ -66,11 +66,17 @@ elevator. The whole mod withdraws while Born From a Wish is playing.
 
 ## Building
 
-`src/build.ps1` builds `PlayableRed.asi` and `PlayableRedConfig.exe` with the
-x86 MSVC toolchain (Visual Studio with the C++ workload and a Windows 10 SDK),
-after two test programs pass: `test_logic.exe` checks the decisions, and
-`host_test.exe` loads the plugin against a private copy of `sh2pc.exe` and
-checks every hook, every value and the way back. See `src/README.md`.
+Step-by-step instructions, the exact toolchain, and how to check a build
+against the shipped binaries are in [BUILDING.md](BUILDING.md). In short:
+
+    powershell -ExecutionPolicy Bypass -File srcuild.ps1 -SkipHostTest
+
+builds `PlayableRed.asi` and `PlayableRedConfig.exe` into `src\out\` with the
+x86 MSVC toolchain (Visual Studio with the C++ workload and a Windows 10 SDK)
+after `test_logic.exe` passes. With `-Game <Silent Hill 2 folder>` the second
+test program, `host_test.exe`, also runs: it loads the plugin against a private
+copy of `sh2pc.exe` and checks every hook, every value and the way back. No
+other library or package is needed.
 
 ## Layout
 
