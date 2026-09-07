@@ -1,0 +1,19 @@
+Playable Pyramid Head 1.0 -- the files in Mod Files\ (size, md5, path relative to the game folder)
+
+    162816  5c93632abdf70ae60872c4c5d9c3f9c0  PlayableRedConfig.exe
+    166912  cce5fa8ba9c743cb52e9929802d8fcd2  PlayableRed.asi
+   1362656  4c769178db851ac81fe10c77ed897410  sh2e\chr\jms\lll_jms.mdl
+   1369200  64f849850bc509fe2db37e751d073ee6  sh2e\chr\jms\hll_jms.mdl
+   1402240  de6cb8abc7310d4566670658d735321b  sh2e\chr\jms\hhl_jms.mdl
+   1402816  bfb8e6a988b56338dd435a95137f3df2  sh2e\chr\jms\hhh_jms.mdl
+    247840  6ec0bdb8646dc1fe36a9d8fb6aea3c11  sh2e\chr\jms\lll_jms_notex.mdl
+    254384  12bec9bcbfcd938c1b0fd7b2e9d78b73  sh2e\chr\jms\hll_jms_notex.mdl
+    287424  7a3a498c3c3977736865b9d292d543c9  sh2e\chr\jms\hhl_jms_notex.mdl
+    288000  1155e8668bbccbba32f8433c5be98912  sh2e\chr\jms\hhh_jms_notex.mdl
+    247552  f3f32411eeec54a7f62fb00ebe1245b5  sh2e\chr\jms\rlll_jms.mdl
+    254144  e464e53401226cfce29a58a23f5e1b61  sh2e\chr\jms\rhll_jms.mdl
+    287456  d5963a81e8c30997d4643efed385062c  sh2e\chr\jms\rhhl_jms.mdl
+    287872  e4b2cbcc1dd9dfbcef3ea51f73857335  sh2e\chr\jms\rhhh_jms.mdl
+    540672  bfee99476b1ce88f94bd7c293bc7465b  sh2e\chr\jms\jms_wpnata.anm
+     35136  2afae6e70cf84809b1016932c29d2b95  sh2e\chr\wp\wp_nata.mdl
+     18400  7c6c467f8d7538c76f7e6f82c9da8d60  sh2e\chr\wp\rwp_nata.mdl

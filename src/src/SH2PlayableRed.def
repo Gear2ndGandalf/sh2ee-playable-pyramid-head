@@ -1,0 +1,10 @@
+; SH2Framework (winmm.dll) resolves plugin entry points with GetProcAddress by
+; plain name.  They are __stdcall, which would be decorated as _LoadPlugin@4
+; and missed; a .def keeps the names bare, as SH2CodeBuilder.dll does.
+; PlayableRedTestBase is for host_test.exe only (the game never calls it).
+LIBRARY PlayableRed.asi
+EXPORTS
+    LoadPlugin
+    UnloadPlugin
+    Update
+    PlayableRedTestBase

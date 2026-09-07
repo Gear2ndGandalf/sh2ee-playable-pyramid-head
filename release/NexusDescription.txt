@@ -1,0 +1,22 @@
+[size=5][b]Playable Pyramid Head[/b][/size]
+
+Play Silent Hill 2 as Pyramid Head. James wears the Red Pyramid Thing's model in every room and cutscene variant, and while the Great Knife is equipped he moves the way Pyramid Head does: his idle, his walk, his stance, his swing and his overhead, the knife held at his angle. A red flashlight to go with it, and a settings window for every part of it.
+
+Nothing in the game's own files is changed. The models and the animation bank live in sh2e\, and a plugin patches the game in memory while it runs, so deleting the files is the uninstall.
+
+[b]Requirements[/b]
+[list]
+[*]Silent Hill 2 PC (2001), the 1.0 executable Enhanced Edition uses
+[*]Silent Hill 2: Enhanced Edition
+[*]"Enable loading ASI plugins" ticked in SH2EEconfig.exe (Advanced tab)
+[*]Windows 7 or later, 32- or 64-bit; nothing else to install, no other mod needed
+[/list]
+
+[b]Install[/b]
+Extract the archive straight into the Silent Hill 2 folder (next to sh2pc.exe). Start the game once; then run PlayableRedConfig.exe to change settings, even with the game running.
+
+[b]Settings[/b]
+Pyramid Head's animations; light and heavy attack damage; the hit line following the drawn blade and a widened light sweep; max health; no fatigue; hyper armour with or without game over; immortal Maria; flashlight colour, beam size and glow; the Great Knife and the flashlight always in the inventory; 2D controls; a run mode on Shift / X / Square; the short trail. Everything can be switched off. The mod withdraws by itself in Born From a Wish.
+
+[b]Credits[/b]
+Gear2 (the mod, the research, the model work, the testing) and Claude (Anthropic) (the formats, the tools, the plugin). Silent Hill 2 is Konami's; the Enhanced Edition team, the Silent Hill Museum, alanm1, Rich Whitehouse, descawed, Cheat Engine, Blender and Capstone made the work possible. The full list is in CREDITS.txt.

@@ -1,0 +1,49 @@
+PLAYABLE PYRAMID HEAD  --  CREDITS
+==================================
+
+Gear2 (Gear2ndGandalf)
+    The mod: the idea and its direction; every Cheat Engine finding and script
+    the plugin grew out of (the Play As Pyramid Head group, No Tripping, Maria
+    Immortal, Fix Flashlight, the room, weapon, health and inventory
+    addresses); the Pyramid Head model built onto James's skeleton by hand in
+    Blender, stage by stage, and the fit of every room variant; the SH2EE Code
+    Builder overlay the exe patches were applied with during development;
+    the whole play-through testing that found and reported each bug.
+
+Claude (Anthropic)
+    The reverse engineering of the .mdl, .anm and .kg1 formats and of the
+    game's animation, hit, floor and room code; the Blender add-on, the
+    animation transplant and the tools that built the models and the bank;
+    PlayableRed.asi and PlayableRedConfig.exe, with their tests.
+
+Team Silent / Konami
+    Silent Hill 2 (2001).  Pyramid Head, his model, his animations and the
+    Great Knife are Konami's; this mod only puts them in James's hands.
+
+The Silent Hill 2: Enhanced Edition team
+    https://enhanced.townofsilenthill.com/SH2/ -- the edition this mod runs on,
+    and the sh2e\ loading that lets it ship without touching the game's files.
+
+Silent Hill Museum (laura-a-n-n and contributors)
+    https://silenthillmuseum.org/ -- the .mdl specification (mdl.ksy) the
+    model reader was verified against, and the skeletons to compare.
+
+alanm1
+    fmt_SH3_mesh.py for Noesis, the starting point of the Silent Hill 2 mesh
+    reader.
+
+Rich Whitehouse
+    Noesis, the viewer everything was checked in.
+
+descawed
+    Heaven's Knife, whose configuration file showed how the game keeps its
+    inventory -- one bit per item -- when the constant writes had to go.
+
+Cheat Engine (Eric Heijnen / Dark Byte)
+    Where every address in this mod was found.
+
+Blender Foundation
+    Blender, where the model was made.
+
+Capstone
+    The disassembly engine behind the tools that read the executable.
